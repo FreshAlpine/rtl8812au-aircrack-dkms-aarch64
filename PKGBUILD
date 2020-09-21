@@ -3,11 +3,11 @@
 # based on rtl8812au-aircrack-ng
 
 _pkgname=rtl8812au
-_commit="65174c4ded74b2da982a13605db59bc0b643c187"
-_main_ver="5.6.4.2"
+_commit="60f74eb102fc29b6f3f0388c9179f08563484bf2"
+_main_ver="5.7.0"
 pkgname=$_pkgname-aircrack-dkms-aarch64
 _diff_file=$pkgname.diff
-pkgver=5.6.4.2.r999.65174c4
+pkgver=5.7.0.r1077.60f74eb
 pkgrel=1
 pkgdesc="Realtek rtl8812au (patched for aarch64, O3, mcpu=native, DFS)"
 arch=('aarch64')
@@ -22,8 +22,8 @@ source=("$_pkgname::git+$url#commit=$_commit"
         "$_diff_file"
         'dkms.conf')
 sha256sums=('SKIP'
-         '27fd29d8f0e6b3eeeb05aa8a75bedc00d0a250f2403975e65654f7223f384c08'
-         'f3a686f378a66463b6702ba9e771c66959bb478cab61f7d3c214c2bdf5ec8e80')
+            '14363a30a47d11b2579abcb303bcd64d8e6a565d2d7c7773608b89cd3e864c06'
+            '1737cd581b75c8cda1987cc0957099bb257fe15669338626bd105cf0a69605b8')
 
 pkgver() {
   cd "$_pkgname"
